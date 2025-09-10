@@ -1,8 +1,7 @@
-root_folder: null
 entrypoint: main.py
-container: aios:python
+container: aios:python3
 parameters:
 - name: SYSTEM_PROMPT
   kind: String
-  default_value: hello
+  default_value: "Talk like Yoda always"
   required: true
