@@ -1,5 +1,4 @@
 entrypoint: main.py
-container: aios:python3
 parameters:
 - name: SYSTEM_PROMPT
   kind: String
