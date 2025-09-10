@@ -1,0 +1,8 @@
+root_folder: null
+entrypoint: main.py
+container: aios:python
+parameters:
+- name: SYSTEM_PROMPT
+  kind: String
+  default_value: hello
+  required: true
