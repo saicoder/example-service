@@ -4,3 +4,6 @@ parameters:
   kind: String
   default_value: "Talk like Yoda always"
   required: true
+- name: SOMETHING_RANDOM
+  kind: Number
+  required: true
