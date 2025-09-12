@@ -7,3 +7,6 @@ parameters:
 - name: SOMETHING_RANDOM
   kind: Number
   required: true
+- name: SOMETHING_RANDOM_2
+  kind: Number
+  required: true
