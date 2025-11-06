@@ -1,10 +1,17 @@
-import time
 import os
 
-var = os.getenv('SYSTEM_PROMPT', 'NOT PROVIDED!!!!!')
+import uvicorn
+from fastapi import FastAPI
 
-i = 1
-while True:
-    print(f"Running service {i}: {var}")
-    time.sleep(3)
-    i += 1
+var = os.getenv("SYSTEM_PROMPT", "NOT PROVIDED!!!!!")
+app = FastAPI()
+
+
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the simple HTTP service"}
+
+
+if __name__ == "__main__":
+    print(f"Staring symple service with SYSTEM_PROMPT={var}")
+    uvicorn.run(app, host="0.0.0.0", port=8181)

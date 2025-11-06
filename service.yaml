@@ -1,12 +1,13 @@
 entrypoint: main.py
 parameters:
-- name: SYSTEM_PROMPT
-  kind: String
-  default_value: "Talk like Yoda always"
-  required: true
-- name: SOMETHING_RANDOM
-  kind: Number
-  required: true
-- name: SOMETHING_RANDOM_2
-  kind: Number
-  required: true
+  - name: SYSTEM_PROMPT
+    kind: String
+    default_value: 'Talk like Yoda always'
+    required: true
+  - name: SOMETHING_RANDOM
+    kind: Number
+    required: true
+endpoints:
+  - name: example-api
+    protocol: HTTP
+    port: 8181
