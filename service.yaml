@@ -9,5 +9,5 @@ parameters:
     required: true
 endpoints:
   - name: example-api
-    protocol: HTTP
+    protocol: Http
     port: 8181
