@@ -1,3 +1,6 @@
+name: ExampleService
+version: 0.0.1
+description: "Simple API service"
 entrypoint: main.py
 parameters:
   - name: SYSTEM_PROMPT
